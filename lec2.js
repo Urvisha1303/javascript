@@ -96,14 +96,14 @@ console.log(var5.search('on'))  /
 
 // floor = minimum value 
 // round = maximum value
-const var9 = Math.floor(Math.random()*100)
-console.log(var9)
+// const var9 = Math.floor(Math.random()*100)
+// console.log(var9)
 
-const var10 = Math.round(Math.random()*(100-50)+ 50)
-console.log(var10)
+// const var10 = Math.round(Math.random()*(100-50)+ 50)
+// console.log(var10)
 
-const var11 = Math.round(Math.random()*255)
-console.log(var11)
+// const var11 = Math.round(Math.random()*255)
+// console.log(var11)
 
 console.log(" 1 1 1 1 \n 2 1 2 4 8 \n 3 1 3 9 27 \n 4 1 4 16 64 \n 5 1 5 25 125")
 
@@ -117,4 +117,4 @@ console.log("number of occurrences of 'love'", occurrences.length)
 
 const text = 'He earns 5000 euro from salary per\ month, 10000 euro annual bonus, 15000 euro\ online courses per month.';
 const arr  = text.match(/\d+/g);
-console.log(arr)
+console.log(+arr[0]*12 + +arr[1] + +arr[2]*12)

@@ -9,7 +9,13 @@ const year = 2022
 
 //const v1 = parselInt('9.8')
 //const v2 = '10'
-
+let var2 = "10"
+let var3 =  10
+let var4 = parseInt(var2)
+// let va5 = Number(var2)
+// let va6 = +(var2)
+console.log(typeof var4)
+console.log(typeof var3)
 
 
 console.log(4 > 3)   // true
