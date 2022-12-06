@@ -88,9 +88,8 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 // console.log(circle)
 
 // const x = prompt("Enter X Value:")
-// const y = prompt("Enter Y Value:")
-// const both = 2*x -2
-// console.log(both)
+// const y = 2*x -2
+// console.log(y)
 
 // const x1 = prompt("Enter X1 value:")
 // const x2 = prompt("Enter x2 value:")
@@ -99,6 +98,10 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 // const m = (y2 - y1)/(x2 - x1) // x1-2 , y1-2, x2-6,y2-10
 // console.log(m)
 
+// console.log(y == m) // ans true or false
+
+c
+//8
 
 // const hours = prompt("Enter Hours:")
 // const perhoursrate = prompt("Enter Rate Per Hour:")
@@ -125,7 +128,7 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 // const var1 = myAge - yourAge
 // console.log(`I am ${var1} years older than you.`)
 
-//* let birth = prompt("Enter Birth Year :")
+//13* let birth = prompt("Enter Birth Year :")
 // let now = new Date()
 // let age = now.getFullYear() - birth + 1900;
 // if (age >= 18) {
@@ -143,3 +146,24 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 // const years = person * 60*60*24*365
 // console.log(`You Lived ${years} Seconds.`)
 
+// const now = new Date()
+// const year = now.getFullYear() // return year
+// const month = now.getMonth() + 1 // return month(0 - 11)
+// const date = now.getDate() // return date (1 - 31)
+// const hours = now.getHours() // return number (0 - 23)
+// const minutes = now.getMinutes() // return number (0 -59)
+// console.log(now.getTime())
+// console.log(`${date}/${month}/${year} ${hours}:${minutes}`)
+// console.log(`${year}-${month}-${date} ${hours}:${minutes}`)
+// console.log(`${date}-${month}-${year} ${hours}:${minutes}`)
+
+//Exercises : Level 3
+
+// const now = new Date()
+// const year = now.getFullYear() // return year
+// const month = now.getMonth() + 1 // return month(0 - 11)
+// const date = now.getDate() // return date (1 - 31)
+// const hours = now.getHours() // return number (0 - 23)
+// const minutes = now.getMinutes() // return number (0 -59)
+// console.log(now.getTime())
+// console.log(`${date}/${month}/${year} ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`)
