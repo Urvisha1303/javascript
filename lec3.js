@@ -100,7 +100,7 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 
 // console.log(y == m) // ans true or false
 
-c
+
 //8
 
 // const hours = prompt("Enter Hours:")
