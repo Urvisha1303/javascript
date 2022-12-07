@@ -102,6 +102,9 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 
 
 //8
+// const x = Number(prompt("Enter X Value:"))
+// const y = x*x + 6*x + 9
+// console.log(y)
 
 // const hours = prompt("Enter Hours:")
 // const perhoursrate = prompt("Enter Rate Per Hour:")
@@ -117,7 +120,7 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 
 // let firstName = prompt("Enter Your first name : ")
 // let lastName = prompt("Enter Your last name:")
-// if (firstName.length < lastName.length) {
+// if (firstName.length > lastName.length) {
 //     console.log("Your firstName, Asabeneh is longer than Your family name, Yetayeh")
 // } else {
 //     console.log("Your firstName, Asabeneh is Shorter than Your family name, Yetayeh")
@@ -128,19 +131,20 @@ console.log(!(var5.includes('on') && var6.includes('on')))
 // const var1 = myAge - yourAge
 // console.log(`I am ${var1} years older than you.`)
 
-//13* let birth = prompt("Enter Birth Year :")
+// let birth = Number(prompt("Enter Birth Year :"))
 // let now = new Date()
-// let age = now.getFullYear() - birth + 1900;
+// let age = now.getFullYear() - birth;
 // if (age >= 18) {
 //     console.log("You Are old Enough to Drive")
 // } else {
 //     console.log("You will be allowed to drive after years.")
 // }
-// if (age => 18) {
+// if (age >= 18) {
 //     console.log(`you are ${age}. You Are old Enough to Drive`)
 // }else {
-//     console.log(`You Are ${age}. You will be allowed to drive after ${year}.`)
+//     console.log(`You Are ${age}. You will be allowed to drive after ${18- age}.`)
 // }
+// // year2010- age 12-18 = 6
 
 // const person = prompt("Enter number of years you live:")
 // const years = person * 60*60*24*365
