@@ -65,7 +65,8 @@
 
 
 // let dayUserInput = prompt('What day is today ?')
-// switch (dayUserInput) {
+// let day = dayUserInput.toLowerCase()
+// switch (day) {
 //     case 'monday':
 //       console.log('Monday is a working day.')
 //       break
@@ -87,6 +88,18 @@
 //     case 'sunday':
 //       console.log('Today is Sunday')
 //       break
-//     default:
-//       console.log('It is not a week day.')
 // }
+
+//Exercises :Level 3
+
+let monthinput = prompt("Enter a Month: ")
+let month = monthinput.toLowerCase()
+if (month =="january" ||month =="march" ||month =="may" ||month =="july" ||month =="auguest" ||month =="octomber" ||month =="december" ){
+    console.log(`${month} has 31 days.`)
+}else if (month =="april" ||month =="june "||month =="september" ||month =="november"){
+    console.log(`${month} has 30 days.`)
+}else if(month =="february" ) {
+    console.log(`${month} has 28 days.`)
+}else{
+    console.log("Invalid Month.")
+}
