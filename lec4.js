@@ -29,27 +29,27 @@
 // a > b ? console.log("a is greater than b") : console.log("a is less than b")
 
 
-const number = prompt("Enter a Number:")
-if (number % 2 === 0){
-    console.log(`${number} is a even number.`)
-}else{
-    console.log(`${number} is an odd number.`)
-}
+// const number = prompt("Enter a Number:")
+// if (number % 2 === 0){
+//     console.log(`${number} is a even number.`)
+// }else{
+//     console.log(`${number} is an odd number.`)
+// }
 
 //Exercises :Level 2 
 
-const marks = prompt("Enter the student marks:")
-if (marks <= 100 && marks >= 80){
-    console.log("Grade : A")
-}else if (marks <= 89 && marks >= 70) {
-    console.log("Grade : B")
-}else if (marks <= 69 && marks >= 60) {
-    console.log("Grade : C")   
-}else if (marks <= 59 && marks >= 50) {
-    console.log("Grade : D")   
-}else{
-    console.log("Grade : F")
-}
+// const marks = prompt("Enter the student marks:")
+// if (marks <= 100 && marks >= 80){
+//     console.log("Grade : A")
+// }else if (marks <= 89 && marks >= 70) {
+//     console.log("Grade : B")
+// }else if (marks <= 69 && marks >= 60) {
+//     console.log("Grade : C")   
+// }else if (marks <= 59 && marks >= 50) {
+//     console.log("Grade : D")   
+// }else{
+//     console.log("Grade : F")
+// }
 
 
 // const month = prompt("Enter the month:")
