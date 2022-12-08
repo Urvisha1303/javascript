@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML Forms tutorial</h2>
+    <form action="backend.php">
+        <!-- <div></div>  / br- tage tage use next line me jane ke liye -->
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div><br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div><br>
+        <div>
+            Email: <input type="email" name="myemail">
+        </div><br>
+        <div>
+            Date: <input type="date" name="myName">
+        </div><br>
+        <div>
+            Bouns: <input type="number" number="myBouns">
+        </div><br>
+
+        <label for="eligible">Are You Eligible?:</label>
+        <div>
+            <input type="checkbox" name="myEligible" id="eligible">
+        </div><br>
+
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio" name="myGender">
+        </div><br>
+        <div>
+            Write about Your Self : <textarea name="mytext" cols="90" rows="5"></textarea>
+        </div><br>
+        <div>
+        <label for="car">Car: </label>
+        <select name="myCar" id="car">
+            <option value="Ind">Indica</option>
+            <option value="swf">Swift</option>
+            <option value="bmw">BMW</option>
+
+        </select>   
+        </div><br>
+        <div>
+            <input type="reset" value="Reset Now">
+            <input type="submit" value="Submit Now">
+        </div>
+    </form>
+</body>
+</html>
