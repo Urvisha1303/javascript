@@ -102,7 +102,7 @@ console.log("Middle itCompaines:", itcompanies.slice(var2, var2 + 1))
 console.log(itcompanies.shift())
 console.log(itcompanies)
 
-  //21.*
+//21.*
 //   const v = Math.floor(itcompanies.length/2)
 //   console.log(itcompanies.slice(v,1))
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- # id ko color kare ga , .karo to class ko color kare ga -->
+    <style>
+        p{
+            border: 2px solid blueviolet;
+        }
+        /* ID selector */
+        #first{
+            color: rgb(222, 104, 35);
+        }
+        /* class selector */
+       .redclass{
+            color: yellowgreen;
+            background-color: chocolate;
+        }
+        /* Grouping Selector */
+        footer, span{
+            background-color: olive;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae laudantium necessitatibus modi atque iusto blanditiis, iure eum cupiditate fugiat nam quod omnis reprehenderit amet? Obcaecati assumenda repellendus aut! Nisi?</p>
+    <p id="Second", class="redclass">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <div>
+        <p>This is another paragraph</p>
+    </div>
+    <footer>This is footer</footer>
+</body>
+</html>
