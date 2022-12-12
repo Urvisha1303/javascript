@@ -1,4 +1,4 @@
-const countries = [
+ export const Coun_tries = [
     'Albania',
     'Bolivia',
     'Canada',

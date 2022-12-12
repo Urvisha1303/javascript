@@ -60,12 +60,12 @@ console.log("Last Company: ", itcompanies[itcompanies.length - 1])
 console.log(itcompanies.toString(), "are big IT companies.")
 
 //13.
-const input = prompt("Enter Company Name:")
-if (itcompanies.includes(input)){
-    console.log(`this ${input} company include in array.`)
-}else{
-    console.log(`this ${input} company is not include in array.`)
-}
+// const input = prompt("Enter Company Name:")
+// if (itcompanies.includes(input)){
+//     console.log(`this ${input} company include in array.`)
+// }else{
+//     console.log(`this ${input} company is not include in array.`)
+// }
 
 //14.
 const arr2 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
@@ -116,3 +116,25 @@ console.log(itcompanies.splice(0, itcompanies.length))
 console.log(itcompanies)
 
 //Exercises :Level 2
+
+//1. main.js file
+
+//2.
+let txt =
+'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+const words = txt.split(" ")
+console.log(words)
+console.log(words.length)
+
+//3.
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.unshift("Meat")
+console.log(shoppingCart)
+shoppingCart.push("Sugar")
+console.log(shoppingCart)
+// shoppingCart.remove("honey")
+// console.log(shoppingCart)
+shoppingCart[3] = "Geern Tea"
+console.log(shoppingCart)
+
+//4.
