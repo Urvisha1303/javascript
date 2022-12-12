@@ -21,12 +21,14 @@ const webTechs = [
     'MongoDB'
 ]
 console.log(webTechs[0])
-console.log(webTechs[Math.floor(webTechs.length / 2)])
+console.log(webTechs[parseInt(webTechs.length / 2)])
 console.log(webTechs[webTechs.length - 1])
 
 //5
 const arr1 = [1, .025, 50.60, true, false, null, undefined, "Mango", "India", { CountryName: "Finland", city: "Surat" }, { Skills: ["HTML", "CSS", "Python", "Javascript"] }]
 console.log(arr1)
+console.log(arr1.length)
+console.log(arr1[1])
 
 //6
 const itcompanies = []
@@ -46,7 +48,7 @@ console.log("Number Of Companies = ", itcompanies.length)
 
 //9.
 console.log("First Company: ", itcompanies[0])
-console.log("Middle Company: ", itcompanies[Math.floor(itcompanies.length / 2)])
+console.log("Middle Company: ", itcompanies[parseInt(itcompanies.length / 2)])
 console.log("Last Company: ", itcompanies[itcompanies.length - 1])
 
 //11.
@@ -58,12 +60,12 @@ console.log("Last Company: ", itcompanies[itcompanies.length - 1])
 console.log(itcompanies.toString(), "are big IT companies.")
 
 //13.
-// const input = prompt("Enter Company Name:")
-// if (itcompanies.includes(input)){
-//     console.log(`this ${input} company include in array.`)
-// }else{
-//     console.log(`this ${input} company is not include in array.`)
-// }
+const input = prompt("Enter Company Name:")
+if (itcompanies.includes(input)){
+    console.log(`this ${input} company include in array.`)
+}else{
+    console.log(`this ${input} company is not include in array.`)
+}
 
 //14.
 const arr2 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
@@ -95,7 +97,7 @@ console.log("First 3 Element:", countries.slice(0, 3))
 console.log("Last 3 Element:", countries.slice(countries.length - 3))
 
 //19.* middle element find
-const var2 = Math.floor(itcompanies.length / 2)
+const var2 = parseInt(itcompanies.length / 2)
 console.log("Middle itCompaines:", itcompanies.slice(var2, var2 + 1))
 
 //20.shift = first element remove
@@ -103,8 +105,8 @@ console.log(itcompanies.shift())
 console.log(itcompanies)
 
 //21.*
-//   const v = Math.floor(itcompanies.length/2)
-//   console.log(itcompanies.slice(v,1))
+  const v = parseInt(itcompanies.length/2)
+  console.log(itcompanies.splice(v,1))
 
 //22.
 console.log(itcompanies.pop())
