@@ -138,3 +138,19 @@ shoppingCart[3] = "Geern Tea"
 console.log(shoppingCart)
 
 //4.
+const countries1 = [
+    'Albania',
+    'Bolivia',
+    'Japan',
+    'Kenya',
+    'Canada',
+    'Germany',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Hungary',
+    'Ireland',
+]
+// const country_code = countries1.filter(country => (country_name ==="'ETHIOPIA'"));
+// console.log(country_code)
+console.log(countries1.includes('ETHIOPIA'))
