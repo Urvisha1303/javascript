@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alignment</title>
     <style>
-        *{
-
+        * {
+            box-sizing: border-box;
         }
-        body{
+
+        body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .container{
-            width: 900px;
-            height: 600px;
+
+        .container {
+            width: 950px;
+            height: 550px;
             border: 3px solid rgb(0, 153, 255);
+            background-color: rgb(128, 193, 166);
             margin: auto;
         }
-        .item{
-            border: 3px solid rgb(230, 108, 108);
+
+        .item {
+            border: 3px solid rgb(154, 223, 232);
             margin: 10px 4px;
-            background-color: antiquewhite;
             padding: 12px 4px;
+            background-color: rgb(185, 163, 134);
         }
-        #fruit{
+
+        #fruits {
+            /* clear: both; */
             float: left;
             width: 48%;
-            
         }
-        #computer{
+
+        #computer {
+            /* clear: left; */
             float: left;
-            width: 48%;
+            width: 49%;
 
         }
-        #stationary{
+
+        #stationary {
             float: left;
-            width: 100%;
+            width: 98%;
+
+        }
+
+        p,
+        h3 {
+            text-align: right;
+            text-align: left;
+            text-align: justify;
+        }
+
+        h2{
+            margin: 20px auto;
+            width: 550px;
+            color: brown;
+            font-style: italic;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
+        <h2>Welcome to my Store</h2>
         <div id="fruits" class="item">
             <h3>Fruits</h3>
-            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laudantium est nisi voluptatum eum possimus voluptas molestiae cumque! Eius quasi corrupti excepturi odio possimus quibusdam accusamus porro! Nemo, eum ad.</p>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                laudantium est nisi voluptatum eum possimus voluptas molestiae cumque! Eius quasi corrupti excepturi
+                odio possimus quibusdam accusamus porro! Nemo, eum ad.</p>
         </div>
-        
+
         <div id="computer" class="item">
-            <h3>Fruits</h3>
-            <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ex molestias suscipit, sed perferendis ea. Accusamus ipsa fugiat aliquid odit, impedit fuga magnam cumque est nulla dignissimos minima tenetur exercitationem?</p>
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ex
+                molestias suscipit, sed perferendis ea. Accusamus ipsa fugiat aliquid odit, impedit fuga magnam cumque
+                est nulla dignissimos minima tenetur exercitationem?</p>
         </div>
-        
+
         <div id="stationary" class="item">
-            <h3>Fruits</h3>
-            <p id="sataionarypara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero totam consequuntur minus accusantium inventore nesciunt voluptatem repellat. Quis ipsam vel cum beatae accusantium. Repellendus nobis sapiente consequuntur voluptatum corporis enim?</p>
+            <h3>Stationary</h3>
+            <p id="sataionarypara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero totam
+                consequuntur minus accusantium inventore nesciunt voluptatem repellat. Quis ipsam vel cum beatae
+                accusantium. Repellendus nobis sapiente consequuntur voluptatum corporis enim?</p>
         </div>
     </div>
 </body>
+
 </html>
