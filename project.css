@@ -1,0 +1,21 @@
+.primary{
+    height: 454px;
+    width: 303px;
+    border: 2px solid #b9c3c3;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+h1{
+    height: auto;
+    width: auto;
+    font-size: 22px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p{
+    font-size: 19px;
+    margin: 0px;
+    padding: 1px;
+}
