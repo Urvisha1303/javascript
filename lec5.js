@@ -132,8 +132,10 @@ shoppingCart.unshift("Meat")
 console.log(shoppingCart)
 shoppingCart.push("Sugar")
 console.log(shoppingCart)
-// shoppingCart.remove("honey")
-// console.log(shoppingCart)
+const removed= shoppingCart.splice(4,1)
+console.log(removed)
+console.log(shoppingCart)
+console.log(shoppingCart.indexOf("Tea"))
 shoppingCart[3] = "Geern Tea"
 console.log(shoppingCart)
 
@@ -153,4 +155,47 @@ const countries1 = [
 ]
 // const country_code = countries1.filter(country => (country_name ==="'ETHIOPIA'"));
 // console.log(country_code)
-console.log(countries1.includes('ETHIOPIA'))
+if(countries1.includes('Ethiopia')){
+    console.log('ETHIOPIA')
+}else{
+    countries1.push('Ethiopia')
+    console.log(countries1)
+}
+//5.
+
+
+//6.
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack= frontEnd.concat(backEnd)
+console.log(fullStack)
+
+//Exercises :Level 3
+
+//1.
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+console.log(ages.sort((a, b) => a - b));
+let a = Math.min(...ages);
+let max = Math.max(...ages);
+console.log(a)
+console.log(max)
+
+const ages1 = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+let sordata = ages1.sort((a,b) => a - b);
+console.log(sordata)  //[19, 19, 20, 22, 24, 24, 24, 25, 25, 26]
+let element = sordata.length;  // 10
+if(element % 2 === 0){
+    let median1 = element / 2;  //5
+    let median2 =element / 2-1;  //4
+    const ele1 = sordata[median2];  //sortdata[4]  //24
+    const ele2 = sordata[median1];  // 24
+    let median= (ele1 + ele2) / 2;
+    console.log(median)
+}
+else{
+    let median1 = parseInt(element/2);  // 4
+    let median = sordata[median]
+    console.log(median1)
+}
+
+
