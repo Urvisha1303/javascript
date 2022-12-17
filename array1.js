@@ -19,9 +19,19 @@ console.log(number1.join(" : "));
 //slice
 const number2 = [25, 36, 14, 28, 29, 75]
 console.log(number2.slice(2, 4)) // copy original array not modifly
+
 //splice
-number2.splice(1, 2) // modifly orginal array
+number2.splice(5, 2) // modifly orginal array
 console.log(number2)
+
+const num9 = [1,52,99,852,463,478,2,0,159,32,65,48]
+num9.splice(5, 2) // modifly orginal array
+console.log(num9)  //[1, 52, 99, 852, 463, 0, 159, 32, 65, 48]
+num9.slice(5,2)
+console.log(num9)  //[1, 52, 99, 852, 463, 0, 159, 32, 65, 48]
+
+
+
 
 //sort
 const number3 = [25, 36, 14, 28, 29, 75];
@@ -66,7 +76,7 @@ function plusfive(a)
 //reduce
 
 const num3 = [1,52,99,852,463,478,2,0,159,32,65,48]
-num3.reduce(sum, 0)
+num3.reduce(sum, 1)
 
 function sum(a,b)
 {
@@ -74,4 +84,4 @@ function sum(a,b)
     return c;
 }
 
-sum(5,6)
+// sum(5,6)
