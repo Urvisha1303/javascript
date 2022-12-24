@@ -123,4 +123,89 @@
 // }
 // console.log(`${even}, ${odd}`)
 
-//13.
+//13.*
+
+// const arr = [];
+// let result;
+// for(let i=0; i<5; i++)
+// {
+//     result = Math.random();
+//     arr.push(result)
+// }
+// console.log(arr)
+
+//14.
+// let arr = [];
+// while(arr.length < 5){
+//     let r = Math.floor(Math.random() * 100) + 1;
+//     if(arr.indexOf(r) === -1) arr.push(r);
+// }
+// console.log(arr);
+
+//15.
+
+//Exercises: Level 2
+
+//1.
+const charaters = 'jfhqifhqwfjewohiwkmgksjqoyrh2649529526574';
+function y(length) {
+    let result = '';
+    const charatersLength = charaters.length;
+    for (let i = 0; i < length; i++) 
+    {
+        result += charaters.charAt(Math.floor(Math.random() * charatersLength));
+    }return result;
+}
+
+console.log(y(13));
+
+const charaters1 = "viajwiuqpxncxmvnwtrol29865174962259adgjhgf8qgr"
+function a(length){
+    let result = ' ';
+    const charatersLength1 = charaters1.length;
+    for (let i = 0; i < length; i++)
+    {
+        result += charaters1.charAt(Math.floor(Math.random() * charatersLength1))
+    }
+    return result;
+}
+console.log(a(26))
+
+const charaters2 = "'v','i','a','j','w','i','u','p','q','x','n','m','c','s','d','f','g','h','k','l','e','r','t','y',',2,9,8,6,51,7,49,6,2,2,59"
+function c(length){
+    let result = '#';
+    const charatersLength2 = charaters2.length;
+    for (let i = 0; i < length; i++)
+    {
+        result += charaters1.charAt(Math.floor(Math.random() * charatersLength2))
+    }
+    return result;
+}
+console.log(c(26))
+
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+//   const newArray = []
+//   for (const country of countries){
+//     newArray.push(country.toUpperCase())
+//   }
+//   console.log(newArray)
+
+//5.
+
+const newlength = []
+for (const country of countries){
+    newlength(country.length())
+}
+console.log(newlength)

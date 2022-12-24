@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>google</title>
+    <style>
+        .d {
+            display: flex;
+            justify-content: center;
+            border-radius: 2px;
+            border: 20px;
+            color: rgb(221, 221, 234);
+
+        }
+
+        .i {
+            display: flex;
+            margin: auto;
+            justify-self: center;
+            width: 290px;
+            height: 100px;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: end;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 8px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(5, 5, 5);
+        }
+
+        .d input {
+            width: 568px;
+            height: 39px;
+            border-radius: 212px;
+            background: url(images/icon.png)top left no-repeat;
+            color: darkgrey;
+
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="i">
+        <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="google image">
+    </div>
+    <div class="d">
+        <input type="text" name="search" id="search">
+    </div>
 </body>
+
 </html>
