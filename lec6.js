@@ -151,61 +151,133 @@ const charaters = 'jfhqifhqwfjewohiwkmgksjqoyrh2649529526574';
 function y(length) {
     let result = '';
     const charatersLength = charaters.length;
-    for (let i = 0; i < length; i++) 
-    {
+    for (let i = 0; i < length; i++) {
         result += charaters.charAt(Math.floor(Math.random() * charatersLength));
-    }return result;
+    } return result;
 }
 
 console.log(y(13));
 
 const charaters1 = "viajwiuqpxncxmvnwtrol29865174962259adgjhgf8qgr"
-function a(length){
+function a(length) {
     let result = ' ';
     const charatersLength1 = charaters1.length;
-    for (let i = 0; i < length; i++)
-    {
+    for (let i = 0; i < length; i++) {
         result += charaters1.charAt(Math.floor(Math.random() * charatersLength1))
     }
     return result;
 }
 console.log(a(26))
 
+//2.
 const charaters2 = "'v','i','a','j','w','i','u','p','q','x','n','m','c','s','d','f','g','h','k','l','e','r','t','y',',2,9,8,6,51,7,49,6,2,2,59"
-function c(length){
+function c(length) {
     let result = '#';
     const charatersLength2 = charaters2.length;
-    for (let i = 0; i < length; i++)
-    {
+    for (let i = 0; i < length; i++) {
         result += charaters1.charAt(Math.floor(Math.random() * charatersLength2))
     }
     return result;
 }
-console.log(c(26))
+console.log(c(28))
 
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
-//   const newArray = []
-//   for (const country of countries){
-//     newArray.push(country.toUpperCase())
-//   }
-//   console.log(newArray)
+//3.
+
+// const countries = [
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya'
+// ]
+// const newArr = []
+// for (const country of countries) {
+//     newArr.push(country.toUpperCase())
+// }
+// console.log(newArr)
 
 //5.
 
-const newlength = []
-for (const country of countries){
-    newlength(country.length())
-}
-console.log(newlength)
+// const newlength = []
+// for (const country of countries) {
+//     newlength.push(country.length);
+// }
+// console.log(newlength)
+
+//6.
+// const arr = []
+// for (const country of countries) {
+//     arr.push([country, country.slice(0, 3), country.length]);
+// }
+// console.log(arr)
+
+//7.
+// const arr = []
+// for(let i = 0; i < countries.length; i++){
+//     if(countries[i].includes('land'));
+//     arr.push(countries[i]);
+// }
+// console.log(arr)
+
+//8.
+// const arr= []
+// for (let i = 0; i < countries.length; i++){
+//     if(countries[i].includes('ia'));
+//     arr.push(countries[i]);
+// }
+// console.log(arr)
+
+//9.
+
+
+//12.
+// const webTechs = [
+//     'HTML',
+//     'CSS',
+//     'JavaScript',
+//     'React',
+//     'Redux',
+//     'Node',
+//     'MongoDB'
+//   ]
+
+// const arr = []
+// for (const country of webTechs) {
+//     arr.push([country, country.length]);
+// }
+// console.log(arr)
+
+//12.
+//14.
+
+// const arr = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+// for (let array of arr){
+//     console.log(array)
+// }
+
+
+// const i = [1,2,3,4,5,6,7,8,9,10]
+// for (let i = 10; i>=0; i--){
+//     console.log(i)
+// }
+
+
+//15.
+// const  fruit = ['banana', 'orange', 'mango', 'lemon']
+// let newArray = [];
+//   for (let i = fruit.length - 1; i >= 0; i--) {
+//     newArray.push(fruit[i]);
+//   }
+// console.log(newArray)
+
+//16.
+  const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+]
