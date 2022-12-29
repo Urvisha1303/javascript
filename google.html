@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: end;
+            padding: 2px;
+            margin: 2px;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 8px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 3px 3px;
+            color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main {
+            display: flex;
+            height: 20vh;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .searchbox {
+            display: flex;
+            justify-content: center;
+            border-radius: 2px;
+            border: 20px;
+            color: rgb(221, 221, 234);
+
+        }
+
+        input {
+            display: flex;
+            width: 580px;
+            height: 45px;
+            border-radius: 45px;
+            border: 1px solid gray;
+            padding-left: 50px;
+
+            background: url(images/icon.png)left no-repeat;
+        }
+
+        /* .microicon{
+            width: 15px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        
+        }
+        .iconimage{
+            width: 15px;
+            position:absolute;
+            top: 120px;
+            left: ;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#"><img src="images/menu.png"></a></li>
+                <li><a href="#"><img src="images/profile.png" width="30px" height="30px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <img src="images/google.jpg" alt="google image">
+        <form>
+
+            
+            <!-- <img class="iconimage" src="images/icon.png"> -->
+            <!-- <img class="microicon" src="images/microphone.png"> -->
+
+        </form>
+    </div>
+    <div class="searchbox">
+        <div>
+            <input type="text" name="search" id="search" >
+        </div>
+        <div>
+            <img src="images/microphone.png">
+            <img src="images/icon.png" alt="iconimage" >
+        </div>
+        <!-- <form>
+            <div class="icon">
+                <input type="text" name="search" id="search" >
+
+            <img src="images/icon.png" alt="iconimage" >
+
+            <input type="text" class="searchicon">
+            <img src="images/microphone.png">
+
+            <input type="text" class="microicon">
+        </form> -->
+    </div>
+    </div>
+
+
+</body>
+
+</html>
