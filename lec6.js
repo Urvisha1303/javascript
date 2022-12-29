@@ -183,6 +183,7 @@ console.log(c(28))
 
 //3.
 
+//4.
 // const countries = [
 //     'Albania',
 //     'Bolivia',
@@ -203,7 +204,6 @@ console.log(c(28))
 // console.log(newArr)
 
 //5.
-
 // const newlength = []
 // for (const country of countries) {
 //     newlength.push(country.length);
@@ -253,9 +253,8 @@ console.log(c(28))
 // }
 // console.log(arr)
 
-//12.
+//13.
 //14.
-
 // const arr = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 // for (let array of arr){
 //     console.log(array)
