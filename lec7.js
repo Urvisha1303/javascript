@@ -153,41 +153,103 @@
 
 
 //1.
-// program to solve quadratic equation
-let root1, root2;
 
-// take input from the user
-let a = prompt("Enter the first number: ");
-let b = prompt("Enter the second number: ");
-let c = prompt("Enter the third number: ");
 
-// calculate discriminant
-let discriminant = b * b - 4 * a * c;
+//2.
+// let root1, root2;
+// // let a = prompt("Enter first number: ")
+// // let b = prompt("Enter second Number: ")
+// // let c = prompt("Enter Third Number: ")
+// function solveQuadEquation(a, b, c) {
+//     let discriminat = b * b - 4 * a * c;
+//     if (discriminat > 0) {
+//         root1 = (-b + Math.sqrt(discriminat)) / (2 * a);
+//         root2 = (-b - Math.sqrt(discriminat)) / (2 * a);
+//         console.log(`${root1} , ${root2}`)
+//     }
+//     else if (discriminat === 0) {
+//         root1 = root2 = -b / (2 * a);
+//         console.log(`${root1}, ${root2}`)
+//     }
+//     else {
+//     }
+// }
 
-// condition for real and different roots
-if (discriminant > 0) {
-    root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-    root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+// solveQuadEquation() // {0}
+// solveQuadEquation(1, 4, 4) // {-2}
+// solveQuadEquation(1, -1, -2) // {2, -1}
+// solveQuadEquation(1, 7, 12) // {-3, -4}
+// solveQuadEquation(1, 0, -4) //{2, -2}
+// solveQuadEquation(1, -1, 0) // {1, 0}
 
-    // result
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+//3.
+// const showDateTime = (format = 'dd//mm/yyyy') => {
+//     const months = [
+//         'January',
+//         'February',
+//         'March',
+//         'April',
+//         'May',
+//         'June',
+//         'July',
+//         'August',
+//         'September',
+//         'October',
+//         'November',
+//         'December'
+//     ]
+//     const now = new Date()
+//     const dd = now.getDate()
+//     const month = month[now.getMonth()]
+//     let mm = now.getMonth() + 1
+//     const year = now.getFullYear()
+//     let hh = now.getHours()
+
+//     const dateMonthYear = `${month} ${date} ${year}`
+//     const time = hours + ':' + minute
+// }
+// console.log(showDateTime('dd/mm/yyyy hh:mm'))
+
+//5.
+// function swap(x, y) {
+//     var t = x;
+//     x = y;
+//     y = t;
+//     return [x, y];
+// }
+
+// console.log(swap(3, 4)) // x => 4, y=>3
+// console.log(swap(4, 5)) //  x = 5, y = 4
+
+//6.
+// let array1 = [1,2,3,4,5,6];
+// let array2 = ['A','B','C','D']
+// function reverseArray(arr){
+//     let newArray = [];
+//     for(let i = arr.length - 1; i>=0 ; i--)
+//     {
+//         newArray.push(arr[i]);
+//     }
+//     return newArray;
+// }
+// console.log(reverseArray(array1))
+// console.log(reverseArray(array2))
+
+//7.
+// const a= ['apple','banana','cargo']
+// function capitalizeArray(capitalizedarray) {
+//     const newArr = []
+//     for (const country of capitalizedarray) {
+//         newArr.push(country.toUpperCase())
+//     }
+//     return newArr
+// }
+// console.log(capitalizeArray(a));
+
+//8.
+const a= ['apple','banana','cargo']
+function additem(){
+    const newArr = []
+    
+    
 }
-
-// condition for real and equal roots
-else if (discriminant == 0) {
-    root1 = root2 = -b / (2 * a);
-
-    // result
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
-}
-
-// if roots are not real
-else {
-    let realPart = (-b / (2 * a)).toFixed(2);
-    let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
-
-    // result
-    console.log(
-    `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
-  );
-}1
