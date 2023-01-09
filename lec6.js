@@ -184,19 +184,19 @@ console.log(c(28))
 //3.
 
 //4.
-// const countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Japan',
-//     'Kenya'
-// ]
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+]
 // const newArr = []
 // for (const country of countries) {
 //     newArr.push(country.toUpperCase())
@@ -226,15 +226,32 @@ console.log(c(28))
 // console.log(arr)
 
 //8.
-// const arr= []
-// for (let i = 0; i < countries.length; i++){
-//     if(countries[i].includes('ia'));
-//     arr.push(countries[i]);
-// }
-// console.log(arr)
+const arr= []
+for (let i = 0; i < countries.length; i++){
+     if(countries[i].endsWith('ia')) {
+        arr.push(countries[i]);
+    }
+}
+   
+console.log(arr)
 
 //9.
-
+//Albania
+//India
+//Using the above countries array, find 
+//the country containing the biggest number of characters.
+let max = 0;
+let cName = ''
+for (let i = 0; i < countries.length; i++){
+   const len = countries[i].length;
+   if (len > max) {
+    max = len;
+    cName = countries[i]
+   }
+}
+console.log(max, cName)
+//countries[i]=Albania len=7 max=7
+//countries[i]=India len=5 max=7
 
 //12.
 // const webTechs = [
@@ -254,6 +271,18 @@ console.log(c(28))
 // console.log(arr)
 
 //13.
+//An application created using MongoDB, Express, React and Node is called a MERN stack app. 
+//Create the acronym MERN by using the array mernStack
+// let string = ''
+// const mernstack = ['MongoDB','Express','React','Node']
+// for (let i=0; i<mernstack.length; i++){
+//     const len= mernstack[i];
+//     string += len.charAt(0);
+//     // console.log(len.charAt(0))
+// }
+// console.log(string)
+
+
 //14.
 // const arr = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 // for (let array of arr){
@@ -270,7 +299,36 @@ console.log(c(28))
 // console.log(newArray)
 
 //16.
-  const fullStack = [
+const fullStack = [
     ['HTML', 'CSS', 'JS', 'React'],
     ['Node', 'Express', 'MongoDB']
 ]
+
+for(let i=0;i<fullStack.length;i++){
+    const b = fullStack[i]
+    for(let j=0;j<b.length;j++){
+        console.log(b[j])
+    }
+    console.log(b)
+    // for (let j=0;j<i;j++)
+}
+
+//i=0 b=[
+//     "HTML",
+//     "CSS",
+//     "JS",
+//     "React"
+// ]
+// i=1 b= ['Node', 'Express', 'MongoDB']
+
+
+const b=[
+        "HTML",
+        "CSS",
+        "JS",
+        "React"
+    ]
+    console.log(b[0])
+    for(let i=0;i<b.length;i++){
+        console.log(b[i])
+    }
