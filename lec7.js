@@ -183,32 +183,56 @@
 // solveQuadEquation(1, -1, 0) // {1, 0}
 
 //3.
-// const showDateTime = (format = 'dd//mm/yyyy') => {
-//     const months = [
-//         'January',
-//         'February',
-//         'March',
-//         'April',
-//         'May',
-//         'June',
-//         'July',
-//         'August',
-//         'September',
-//         'October',
-//         'November',
-//         'December'
-//     ]
-//     const now = new Date()
-//     const dd = now.getDate()
-//     const month = month[now.getMonth()]
-//     let mm = now.getMonth() + 1
-//     const year = now.getFullYear()
-//     let hh = now.getHours()
+//  let array = ['hello','ghagd','bxjh','bsjhd']
+//  function printArray(a){
+//     for (let i=0; i<a.length; i++){
+//         console.log(a[i])
+//      }
+//  }
 
-//     const dateMonthYear = `${month} ${date} ${year}`
-//     const time = hours + ':' + minute
-// }
-// console.log(showDateTime('dd/mm/yyyy hh:mm'))
+//  printArray(array)
+
+//4.
+const showDateTime = (format = 'dd//mm/yyyy') => {
+    const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+    ]
+    const now = new Date() //
+    const dd = now.getDate() //08 dd
+    const month = now.getMonth() //00
+    const monthInWord = months[now.getMonth()] //January //Month
+    let mm = now.getMonth() + 1 //01 //mm
+    const year = now.getFullYear() //2023 //yyyy
+    let hh = now.getHours() //15 //hh
+    let minutes = now.getMinutes() //mm
+
+    switch(format) {
+        case 'dd/mm/yyyy hh:mm':
+            return `${dd}/${mm}/${year} ${hh}:${minutes}`
+            break;
+        case 'd Month yyyy':
+            return `${dd} ${monthInWord} ${year}`
+            break;
+        default:
+    }
+    // const dateMonthYear = `${month} ${date} ${year}`
+    // const time = hours + ':' + minute
+}
+console.log(showDateTime('dd/mm/yyyy hh:mm'))
+console.log(showDateTime('d Month yyyy'))
+
+// 8 January 2021
 
 //5.
 // function swap(x, y) {
@@ -238,18 +262,48 @@
 //7.
 // const a= ['apple','banana','cargo']
 // function capitalizeArray(capitalizedarray) {
+    
 //     const newArr = []
 //     for (const country of capitalizedarray) {
 //         newArr.push(country.toUpperCase())
 //     }
-//     return newArr
+//      return newArr
+  
+
 // }
 // console.log(capitalizeArray(a));
 
 //8.
-const a= ['apple','banana','cargo']
-function additem(){
-    const newArr = []
+//Declare a function name addItem. It takes an item
+// parameter and it returns an array after adding the item
+let newArr = []
+function additem(item){
     
-    
+    newArr.push(item)
+    return newArr
 }
+console.log(additem("Hello"))
+console.log(additem("Hello1"))
+
+
+// const a = +prompt("Enter A:")
+// const b = +prompt("Enter B:")
+// const c = +prompt("Enter C:")
+
+// function linearEq(a1,b1,c1) {
+//     const x1 = 0;
+//     const y2 = 0;
+//     let x2 = 0;
+//     let y1 = 0;
+    
+//     y1 = (c1 / b1) * -1;
+//     x2 = (c1 / a1) * -1;
+//     return [x1,y1,x2,y2]
+//     //console.log(`(${x1}, ${y1}) (${x2}, ${y2})`)
+// }
+// const [x1,y1,x2,y2] = linearEq(a,b,c); 
+// console.log(`(${x1}, ${y1}) (${x2}, ${y2})`)
+
+
+
+
