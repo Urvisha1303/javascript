@@ -194,7 +194,7 @@ if(element % 2 === 0){
 }
 else{
     let median1 = parseInt(element/2);  // 4
-    let median = sordata[median]
+    let median = sordata[median1]
     console.log(median1)
 }
 
