@@ -153,7 +153,23 @@
 
 
 //1.
+// const a = +prompt("Enter A:")
+// const b = +prompt("Enter B:")
+// const c = +prompt("Enter C:")
 
+// function linearEq(a1,b1,c1) {
+//     const x1 = 0;
+//     const y2 = 0;
+//     let x2 = 0;
+//     let y1 = 0;
+
+//     y1 = (c1 / b1) * -1;
+//     x2 = (c1 / a1) * -1;
+//     return [x1,y1,x2,y2]
+//     //console.log(`(${x1}, ${y1}) (${x2}, ${y2})`)
+// }
+// const [x1,y1,x2,y2] = linearEq(a,b,c); 
+// console.log(`(${x1}, ${y1}) (${x2}, ${y2})`)
 
 //2.
 // let root1, root2;
@@ -217,7 +233,7 @@ const showDateTime = (format = 'dd//mm/yyyy') => {
     let hh = now.getHours() //15 //hh
     let minutes = now.getMinutes() //mm
 
-    switch(format) {
+    switch (format) {
         case 'dd/mm/yyyy hh:mm':
             return `${dd}/${mm}/${year} ${hh}:${minutes}`
             break;
@@ -262,48 +278,86 @@ console.log(showDateTime('d Month yyyy'))
 //7.
 // const a= ['apple','banana','cargo']
 // function capitalizeArray(capitalizedarray) {
-    
 //     const newArr = []
 //     for (const country of capitalizedarray) {
 //         newArr.push(country.toUpperCase())
 //     }
 //      return newArr
-  
-
 // }
 // console.log(capitalizeArray(a));
 
 //8.
-//Declare a function name addItem. It takes an item
-// parameter and it returns an array after adding the item
-let newArr = []
-function additem(item){
-    
-    newArr.push(item)
-    return newArr
-}
-console.log(additem("Hello"))
-console.log(additem("Hello1"))
+// let newArr = []
+// function additem(item) {
 
-
-// const a = +prompt("Enter A:")
-// const b = +prompt("Enter B:")
-// const c = +prompt("Enter C:")
-
-// function linearEq(a1,b1,c1) {
-//     const x1 = 0;
-//     const y2 = 0;
-//     let x2 = 0;
-//     let y1 = 0;
-    
-//     y1 = (c1 / b1) * -1;
-//     x2 = (c1 / a1) * -1;
-//     return [x1,y1,x2,y2]
-//     //console.log(`(${x1}, ${y1}) (${x2}, ${y2})`)
+//     newArr.push(item)
+//     return newArr
 // }
-// const [x1,y1,x2,y2] = linearEq(a,b,c); 
-// console.log(`(${x1}, ${y1}) (${x2}, ${y2})`)
+// console.log(additem("Hello"))
+// console.log(additem("Hello1"))
 
+//9.
 
+// const a = ['apple', 'banana', 'cargo', 'afas', 'afg']
+// function removeitem(index) {
+//     let b = a.splice(index)
+//     return b
+// }
+// console.log(removeitem(3, 0))
 
+//10.
+function sumOfNumbers(number){
+    let sum = 0;
+    for (let i=0; i<number;i++){
+        sum += i;
+    }
+    return sum;
+}
 
+console.log(sumOfNumbers(15))
+
+//11.
+function sumOfOdds(number) {
+    let sum = [];
+    for (let i = 0; i < number; i++) {
+        if (i % 2 === 1) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumOfOdds(['100']))
+
+//12.
+
+function sumOfEven(number) {
+    let sum = [];
+    for (let i = 0; i < number; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumOfEven(['100']));
+
+//13.
+
+//12.
+
+function evensAndOdds(number) {
+    let even = [];
+    let odd= [];
+    for (let i = 0; i < number; i++) {
+        if (i % 2 === 0) {
+            even += i;
+        }
+        else{
+            odd += i;
+        }
+    }
+    return even;
+    return odd;
+}
+
+console.log(evensAndOdds(['100']));
