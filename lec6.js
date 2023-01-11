@@ -5,11 +5,11 @@
 //     console.log(i)
 // }
 
-// // let i = 0
-// // while(i<=10){
-// //     console.log(i)
-// //     i++
-// // }
+// let i = 0
+// while(i<=10){
+//     console.log(i)
+//     i++
+// }
 
 // let i = 0;
 // do{
@@ -226,13 +226,13 @@ const countries = [
 // console.log(arr)
 
 //8.
-const arr= []
-for (let i = 0; i < countries.length; i++){
-     if(countries[i].endsWith('ia')) {
+const arr = []
+for (let i = 0; i < countries.length; i++) {
+    if (countries[i].endsWith('ia')) {
         arr.push(countries[i]);
     }
 }
-   
+
 console.log(arr)
 
 //9.
@@ -242,12 +242,12 @@ console.log(arr)
 //the country containing the biggest number of characters.
 let max = 0;
 let cName = ''
-for (let i = 0; i < countries.length; i++){
-   const len = countries[i].length;
-   if (len > max) {
-    max = len;
-    cName = countries[i]
-   }
+for (let i = 0; i < countries.length; i++) {
+    const len = countries[i].length;
+    if (len > max) {
+        max = len;
+        cName = countries[i]
+    }
 }
 console.log(max, cName)
 //countries[i]=Albania len=7 max=7
@@ -304,9 +304,9 @@ const fullStack = [
     ['Node', 'Express', 'MongoDB']
 ]
 
-for(let i=0;i<fullStack.length;i++){
+for (let i = 0; i < fullStack.length; i++) {
     const b = fullStack[i]
-    for(let j=0;j<b.length;j++){
+    for (let j = 0; j < b.length; j++) {
         console.log(b[j])
     }
     console.log(b)
@@ -322,13 +322,20 @@ for(let i=0;i<fullStack.length;i++){
 // i=1 b= ['Node', 'Express', 'MongoDB']
 
 
-const b=[
-        "HTML",
-        "CSS",
-        "JS",
-        "React"
-    ]
-    console.log(b[0])
-    for(let i=0;i<b.length;i++){
-        console.log(b[i])
-    }
+const b = [
+    "HTML",
+    "CSS",
+    "JS",
+    "React"
+]
+console.log(b[0])
+for (let i = 0; i < b.length; i++) {
+    console.log(b[i])
+}
+
+let mernStack = ["MongoDb", "Express", "React", "Node"]
+let mern = " ";
+for (let i = 0; i < mernStack.length; i++) {
+    mern += mernStack[i].slice(0, 0);
+}
+console.log(mern)

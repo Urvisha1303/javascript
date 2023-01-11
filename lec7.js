@@ -297,7 +297,6 @@ console.log(showDateTime('d Month yyyy'))
 // console.log(additem("Hello1"))
 
 //9.
-
 // const a = ['apple', 'banana', 'cargo', 'afas', 'afg']
 // function removeitem(index) {
 //     let b = a.splice(index)
@@ -329,7 +328,6 @@ function sumOfOdds(number) {
 console.log(sumOfOdds(['100']))
 
 //12.
-
 function sumOfEven(number) {
     let sum = [];
     for (let i = 0; i < number; i++) {
@@ -342,22 +340,28 @@ function sumOfEven(number) {
 console.log(sumOfEven(['100']));
 
 //13.
-
-//12.
-
 function evensAndOdds(number) {
-    let even = [];
-    let odd= [];
-    for (let i = 0; i < number; i++) {
+    let even = 0;
+    let odd= 0;
+    for (let i = 0; i <= number; i++) {
         if (i % 2 === 0) {
-            even += i;
+            even++;
         }
         else{
-            odd += i;
+            odd++;
         }
     }
-    return even;
-    return odd;
+    return `${even} \n ${odd}`;
+    
 }
+console.log(evensAndOdds(100));
 
-console.log(evensAndOdds(['100']));
+//14.
+let generateRandomIp = () => {
+    let one = Math.floor(Math.random() * 255);
+    let two = Math.floor(Math.random() * 255);
+    let three = Math.floor(Math.random() * 255);
+    let four = Math.floor(Math.random() * 255);
+    return `IP: ${one}:${two}:${three}:${four}`
+}
+console.log(generateRandomIp());
