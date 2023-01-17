@@ -336,6 +336,6 @@ for (let i = 0; i < b.length; i++) {
 let mernStack = ["MongoDb", "Express", "React", "Node"]
 let mern = " ";
 for (let i = 0; i < mernStack.length; i++) {
-    mern += mernStack[i].slice(0, 0);
+    mern += mernStack[i].slice(0,1);
 }
 console.log(mern)
