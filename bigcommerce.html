@@ -8,26 +8,95 @@
     <title>Big Commerce</title>
 </head>
 <style>
-    p{
-        background-color: #0e1b83;
-        color: white;
-        height: 35px;
-        margin: -8px;
+    body {
+        margin: auto;
     }
-    img{
-        padding: initial;
-    margin: auto;
-    width: 23px;
-    height: 21px;
-    vertical-align: text-top;
+
+    .button {
+        background-color: #0a2652;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color: white;
+        height: 15px;
+        /* flex: 1;  */
+    }
+
+    img {
+        width: 20px;
+        height: 18px;
+    }
+
+    a {
+        color: rgb(244, 167, 51);
+        white-space: nowrap;
+    }
+    .header{
+        margin: auto;
+        background-color: darkgray;
+        /* border-radius: 55px; */
+    }
+    .contextlist li{
+        list-style: none;
+        float: left;
+   
+    }
+
+    .contextlist li a {
+        margin: auto;
+        display: flex;
+        color: black;
+        text-decoration: none;
+        /* float: left; */
+    }
+    .linklist li{
+        list-style: none;
+    margin: 13px 8px;
+    float: right;
+    }
+
+    .linklist li a {
+        display: flex;
+        color: black;
+        /* flex: 1; */
+        text-decoration: none;
+        float: left;
+        
     }
 </style>
 
 <body>
+    <header class="button">
         <p>Our hearts are with our employees and their families in Ukraine.</p>
         <img src="https://cdn.optimizely.com/img/134769299/07ab9586501e4fd3b968fef8d3fa73c4.png">
         <a href="#">Donate Now</a>
+    </header>
+    <header class="header">
+        <div>
+            <ul class="contextlist">
+                <li>
+                    <a href="#">ENTERPRISE</a>
+                    <a href="#">ESSENTIALS</a>
+                </li>
+            </ul>
+            <ul class="linklist">
+                <li><a href="#">Contact Us</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Log In</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
 
 </body>
 
 </html>
+
+<!-- <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Log In</a></li>  -->
