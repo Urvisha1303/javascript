@@ -9,6 +9,7 @@
 </head>
 <style>
     body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin: auto;
     }
 
@@ -23,7 +24,6 @@
     p {
         color: white;
         height: 15px;
-        /* flex: 1;  */
     }
 
     img {
@@ -35,37 +35,51 @@
         color: rgb(244, 167, 51);
         white-space: nowrap;
     }
-    .header{
-        margin: auto;
-        background-color: darkgray;
-        /* border-radius: 55px; */
+
+    .header {
+        background-color: rgb(226, 223, 223);
+        height: 35px;
+        display: flex;
     }
-    .contextlist li{
+    .contextlist{
+        flex: 0.9;
+    }
+
+    .contextlist li {
+        margin: -6px;
+        display: flex;
         list-style: none;
         float: left;
-   
+       
     }
 
     .contextlist li a {
         margin: auto;
-        display: flex;
-        color: black;
+        color: #595656;
         text-decoration: none;
-        /* float: left; */
+        margin-left: 100px;
+        margin-right: 60px;
+        font-size: medium;
+       
     }
-    .linklist li{
+
+    .linklist li {
+        margin: -8px;
         list-style: none;
-    margin: 13px 8px;
-    float: right;
+        margin: 13px 8px;
+        display: flex;
     }
 
     .linklist li a {
-        display: flex;
-        color: black;
-        /* flex: 1; */
+        margin-top: -20px;
+        margin-bottom: -20px;
+        color: #565656;
         text-decoration: none;
-        float: left;
-        
+        margin-left: 20px;
+        margin-right: 20px;
+        float: right;
+        font-size: small;
+        font-weight: bold;
     }
 </style>
 
@@ -75,8 +89,8 @@
         <img src="https://cdn.optimizely.com/img/134769299/07ab9586501e4fd3b968fef8d3fa73c4.png">
         <a href="#">Donate Now</a>
     </header>
-    <header class="header">
-        <div>
+    <header>
+        <div class="header">
             <ul class="contextlist">
                 <li>
                     <a href="#">ENTERPRISE</a>
@@ -90,9 +104,7 @@
                 </li>
             </ul>
         </div>
-
     </header>
-
 </body>
 
 </html>
