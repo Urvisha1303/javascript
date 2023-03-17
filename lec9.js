@@ -29,16 +29,16 @@ console.log(newnumbers)
 
 //Use map to map the products array to its corresponding prices.
 
-const products = [
-    { product: 'banana', price: 3 },
-    { product: 'mango', price: 6 },
-    { product: 'potato', price: ' ' },
-    { product: 'avocado', price: 8 },
-    { product: 'coffee', price: 10 },
-    { product: 'tea', price: '' },
-  ]
-const newproduct = products.map(product => product.price)
-console.log(newproduct)
+// const products = [
+//     { product: 'banana', price: 3 },
+//     { product: 'mango', price: 6 },
+//     { product: 'potato', price: ' ' },
+//     { product: 'avocado', price: 8 },
+//     { product: 'coffee', price: 10 },
+//     { product: 'tea', price: '' },
+//   ]
+// const newproduct = products.map(product => product.price)
+// console.log(newproduct)
 
 //filter
 
@@ -60,8 +60,8 @@ const filtercountries2 = countries.filter(country => country.startsWith('E'))
 console.log(filtercountries2)
 
 //Use filter to filter out only prices with values.
-const filtercountries3 = products.filter(country => +country.price)
-console.log(filtercountries3)
+// const filtercountries3 = products.filter(country => +country.price)
+// console.log(filtercountries3)
 
 //Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 
@@ -79,8 +79,48 @@ console.log(sum)
 
 //Use some to check if some names' length greater than seven in names array
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
-const namelength = names.some((name) => name.length > 7);
+const namelength = names.some((name) => name.length > 7);// any one work isgrenter than 7 it's true
 
 console.log(namelength)
 
+//Use every to check if all the countries contain the word land
+const countriess = ['Finland', 'Iceland', 'Switzerland', 'Greenland', 'New Zealand']
 
+const countrie = countriess.every(country => country.includes('land')) // all word available in varaible it's true 
+console.log(countrie)
+
+//Use find to find the first country containing only six letters in the countries array
+
+// const result = countries.find(name => name.length === 6)
+// console.log(result)
+
+//Use find to find the first country containing only six letters in the countries array
+// const result = countries.findIndex(name => name.length === 6);
+// console.log(result)
+
+//Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+// const countries1 = ['Finland', 'Sweden', 'Denmark', 'IceLand','England']
+// const result = countries1.findIndex(name => name.includes('Norway'));
+// console.log(result)
+
+//Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+const countries1 = ['Finland', 'Sweden', 'Denmark', 'IceLand','England']
+const result = countries1.findIndex(name => name.includes('Russia'));
+console.log(result)
+
+
+//Exercises: Level 2
+
+//Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+
+const products = [
+  { product: 'banana', price: 3 ,instock: true},
+  { product: 'mango', price: 6, instock: false },
+  { product: 'potato', price: ' ', instock: false },
+  { product: 'avocado', price: 8 , instock: true},
+  { product: 'coffee', price: 10 , instock : true},
+  { product: 'tea', price: '' , instock: false},
+]
+
+const totalprice = products.map(product=> product.instock).filter(product =>product.price).reduce((total, price) => total + price , 0)
+console.log(totalprice)
